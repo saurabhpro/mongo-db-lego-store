@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/legoStore/reports")
 public class ReportingController {
-    private ReportService reportService;
+    private final ReportService reportService;
 
     public ReportingController(ReportService reportService) {
         this.reportService = reportService;
@@ -21,4 +21,5 @@ public class ReportingController {
     public List<AvgRatingModel> avgRatingReport() {
         return this.reportService.getAvgRatingReport();
     }
+
 }

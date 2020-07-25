@@ -99,14 +99,32 @@ public class CustomFilteringController {
         final Iterable<LegoSet> legoSets = this.legoSetRepository.findAll(bestBuysFilter);
 
         return legoSets.iterator().hasNext() ?
-                ResponseEntity.notFound().build() :
-                ResponseEntity.ok(legoSets);
+                ResponseEntity.ok(legoSets) :
+                ResponseEntity.notFound().build();
     }
 
     @GetMapping("/fullTextSearch/{text}")
-    public Collection<LegoSet> fullTextSearch(@PathVariable String text){
+    public Collection<LegoSet> fullTextSearch(@PathVariable String text) {
         TextCriteria textCriteria = TextCriteria.forDefaultLanguage().matching(text);
         return this.legoSetRepository.findAllBy(textCriteria);
+    }
+
+    // assignment
+    @GetMapping("/unpopular")
+    public ResponseEntity<Iterable<LegoSet>> unpopular() {
+        // build query
+        QLegoSet query = new QLegoSet("query");
+        BooleanExpression notInStockFilter = query.deliveryInfo.inStock.isFalse();
+        Predicate hasNoReviews = query.reviews.isEmpty();
+
+        Predicate unpopular = notInStockFilter.or(hasNoReviews);
+
+        // pass the query to findAll()
+        final Iterable<LegoSet> legoSets = this.legoSetRepository.findAll(unpopular);
+
+        return legoSets.iterator().hasNext() ?
+                ResponseEntity.ok(legoSets) :
+                ResponseEntity.notFound().build();
     }
 
     private ResponseEntity<List<LegoSet>> getListResponseEntity(List<LegoSet> legoSetList) {
