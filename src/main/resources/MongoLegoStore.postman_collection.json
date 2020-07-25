@@ -1,0 +1,1599 @@
+{
+	"info": {
+		"_postman_id": "e4a8161f-3177-4e8f-9d1b-db6f30d1be30",
+		"name": "MongoLegoStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "filter",
+			"item": [
+				{
+					"name": "GET all by theme",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/theme/:theme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"theme",
+								":theme"
+							],
+							"variable": [
+								{
+									"key": "theme",
+									"value": "Star Wars"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by theme",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/theme/:theme",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"theme",
+										":theme"
+									],
+									"variable": [
+										{
+											"key": "theme",
+											"value": "Star Wars"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:48:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by hardWithNameStartWithM",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/hardWithNameStartWithM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"hardWithNameStartWithM"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by hardWithNameStartWithM",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/hardWithNameStartWithM",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"hardWithNameStartWithM"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:48:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ef\",\n        \"name\": \"MINDSTORMS EV3\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Mindstorms\",\n        \"reviews\": [\n            {\n                \"userName\": \"Cosmin\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"Jane\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"James\",\n                \"rating\": 10\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-04\",\n            \"deliveryFee\": 100,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8ed\",\n            \"type\": \"Cash\",\n            \"fee\": 10\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by deliveryFee less than",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/deliveryFee/50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"deliveryFee",
+								"50"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by deliveryFee less than not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/deliveryFee/0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"deliveryFee",
+										"0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 10:04:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "GET all by deliveryFee less than 50",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/deliveryFee/50",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"deliveryFee",
+										"50"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:47:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by greatReviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/greatReviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"greatReviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by greatReviews",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/greatReviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"greatReviews"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:47:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ef\",\n        \"name\": \"MINDSTORMS EV3\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Mindstorms\",\n        \"reviews\": [\n            {\n                \"userName\": \"Cosmin\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"Jane\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"James\",\n                \"rating\": 10\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-04\",\n            \"deliveryFee\": 100,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8ed\",\n            \"type\": \"Cash\",\n            \"fee\": 10\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by paymentOption",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/paymentOption/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"paymentOption",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5f1bfdc4d91cf9165079d8eb"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by paymentOption",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/paymentOption/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"paymentOption",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f1bfdc4d91cf9165079d8eb"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:46:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8f1\",\n        \"name\": \"Sky Police Air Base\",\n        \"difficulty\": \"MEDIUM\",\n        \"theme\": \"City\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 5\n            },\n            {\n                \"userName\": \"Andrew\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-28\",\n            \"deliveryFee\": 50,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by inStock",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/inStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"inStock"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by inStock",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/inStock",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"inStock"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:46:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfe0ed91cf9165079d8f2\",\n        \"name\": \"death star\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"star wars\",\n        \"reviews\": [\n            {\n                \"userName\": null,\n                \"rating\": 4\n            },\n            {\n                \"userName\": null,\n                \"rating\": 4\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-25\",\n            \"deliveryFee\": 500,\n            \"inStock\": true\n        },\n        \"paymentOptions\": null\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfe1cd91cf9165079d8f3\",\n        \"name\": \"death star\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"star wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"sktest1\",\n                \"rating\": 4\n            },\n            {\n                \"userName\": \"sktest1\",\n                \"rating\": 4\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-25\",\n            \"deliveryFee\": 500,\n            \"inStock\": true\n        },\n        \"paymentOptions\": null\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8f1\",\n        \"name\": \"Sky Police Air Base\",\n        \"difficulty\": \"MEDIUM\",\n        \"theme\": \"City\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 5\n            },\n            {\n                \"userName\": \"Andrew\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-28\",\n            \"deliveryFee\": 50,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all by theme is not star wars",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/filter/themeNotLikeStarWars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"themeNotLikeStarWars"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all by theme is not star wars",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore/filter/themeNotLikeStarWars",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"themeNotLikeStarWars"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:50:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c0061dea6484538b88e5d\",\n        \"name\": \"MINDSTORMS EV3\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Mindstorms\",\n        \"reviews\": [\n            {\n                \"userName\": \"Cosmin\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"Jane\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"James\",\n                \"rating\": 10\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-04\",\n            \"deliveryFee\": 100,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1c0061dea6484538b88e5b\",\n            \"type\": \"Cash\",\n            \"fee\": 10\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c0061dea6484538b88e5e\",\n        \"name\": \"McLaren Senna\",\n        \"difficulty\": \"EASY\",\n        \"theme\": \"Speed Champions\",\n        \"reviews\": [\n            {\n                \"userName\": \"Bogdan\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"Christa\",\n                \"rating\": 9\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-01\",\n            \"deliveryFee\": 70,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1c0061dea6484538b88e5a\",\n            \"type\": \"PayPal\",\n            \"fee\": 1\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c0061dea6484538b88e5f\",\n        \"name\": \"Sky Police Air Base\",\n        \"difficulty\": \"MEDIUM\",\n        \"theme\": \"City\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 5\n            },\n            {\n                \"userName\": \"Andrew\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-28\",\n            \"deliveryFee\": 50,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1c0061dea6484538b88e59\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET text indexed search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080//api/v1/legoStore/filter/fullTextSearch/Dan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"fullTextSearch",
+								"Dan"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET text indexed search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080//api/v1/legoStore/filter/fullTextSearch/Dan",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"fullTextSearch",
+										"Dan"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 11:40:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c19fd4421cf65a3bdba0b\",\n        \"name\": \"Sky Police Air Base\",\n        \"difficulty\": \"MEDIUM\",\n        \"theme\": \"City\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 5\n            },\n            {\n                \"userName\": \"Andrew\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-28\",\n            \"deliveryFee\": 50,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": null,\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c19fd4421cf65a3bdba08\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": null,\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET best Buy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080//api/v1/legoStore/filter/bestBuys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"bestBuys"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET best Buy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080//api/v1/legoStore/filter/bestBuys",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"bestBuys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 11:55:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c1d9b7cb0823bf7fd87a1\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": null,\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET unpopular",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080//api/v1/legoStore/filter/unpopular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"legoStore",
+								"filter",
+								"unpopular"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET unpopular",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080//api/v1/legoStore/filter/unpopular",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"legoStore",
+										"filter",
+										"unpopular"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 11:53:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1c1d293ce13b5d2c3a7f11\",\n        \"name\": \"death star\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"star wars\",\n        \"reviews\": [],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-25\",\n            \"deliveryFee\": 500,\n            \"inStock\": false\n        },\n        \"paymentOptions\": null\n    }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "reports",
+			"item": [
+				{
+					"name": "GET projection avg rating report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080//api/v1/legoStore/reports/avgRatingsReport",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"legoStore",
+								"reports",
+								"avgRatingsReport"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET projection avg rating report",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080//api/v1/legoStore/reports/avgRatingsReport",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"legoStore",
+										"reports",
+										"avgRatingsReport"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 10:58:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5f1c103fe19e8e2c5232f207\",\n        \"productName\": \"Millennium Falcon\",\n        \"avgRating\": 8.333333333333334\n    },\n    {\n        \"id\": \"5f1c103fe19e8e2c5232f208\",\n        \"productName\": \"MINDSTORMS EV3\",\n        \"avgRating\": 9.666666666666666\n    },\n    {\n        \"id\": \"5f1c103fe19e8e2c5232f209\",\n        \"productName\": \"McLaren Senna\",\n        \"avgRating\": 9\n    },\n    {\n        \"id\": \"5f1c103fe19e8e2c5232f20a\",\n        \"productName\": \"Sky Police Air Base\",\n        \"avgRating\": 6.5\n    }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "misc",
+			"item": [
+				{
+					"name": "POST create unpopular lego",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": false\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST create unpopular lego",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": false\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/api/v1/legoStore/5f1c1d293ce13b5d2c3a7f11"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 11:53:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "POST create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/legoStore",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"legoStore"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jul 2020 09:40:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"noOfParts\": 0,\n    \"id\": \"5f1bfe1cd91cf9165079d8f3\",\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500,\n        \"inStock\": true\n    },\n    \"paymentOptions\": null\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "POST create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/legoStore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"legoStore"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jul 2020 09:40:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"noOfParts\": 0,\n    \"id\": \"5f1bfe1cd91cf9165079d8f3\",\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500,\n        \"inStock\": true\n    },\n    \"paymentOptions\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/legoStore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"legoStore"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jul 2020 09:39:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8f1\",\n        \"name\": \"Sky Police Air Base\",\n        \"difficulty\": \"MEDIUM\",\n        \"theme\": \"City\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 5\n            },\n            {\n                \"userName\": \"Andrew\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-28\",\n            \"deliveryFee\": 50,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ef\",\n        \"name\": \"MINDSTORMS EV3\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Mindstorms\",\n        \"reviews\": [\n            {\n                \"userName\": \"Cosmin\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"Jane\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"James\",\n                \"rating\": 10\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-04\",\n            \"deliveryFee\": 100,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8ed\",\n            \"type\": \"Cash\",\n            \"fee\": 10\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8f0\",\n        \"name\": \"McLaren Senna\",\n        \"difficulty\": \"EASY\",\n        \"theme\": \"Speed Champions\",\n        \"reviews\": [\n            {\n                \"userName\": \"Bogdan\",\n                \"rating\": 9\n            },\n            {\n                \"userName\": \"Christa\",\n                \"rating\": 9\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-08-01\",\n            \"deliveryFee\": 70,\n            \"inStock\": false\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8ec\",\n            \"type\": \"PayPal\",\n            \"fee\": 1\n        }\n    },\n    {\n        \"noOfParts\": 0,\n        \"id\": \"5f1bfdc4d91cf9165079d8ee\",\n        \"name\": \"Millennium Falcon\",\n        \"difficulty\": \"HARD\",\n        \"theme\": \"Star Wars\",\n        \"reviews\": [\n            {\n                \"userName\": \"Dan\",\n                \"rating\": 7\n            },\n            {\n                \"userName\": \"Anna\",\n                \"rating\": 10\n            },\n            {\n                \"userName\": \"John\",\n                \"rating\": 8\n            }\n        ],\n        \"deliveryInfo\": {\n            \"deliveryDate\": \"2020-07-26\",\n            \"deliveryFee\": 30,\n            \"inStock\": true\n        },\n        \"paymentOptions\": {\n            \"id\": \"5f1bfdc4d91cf9165079d8eb\",\n            \"type\": \"CreditCard\",\n            \"fee\": 0\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/legoStore/5f1c052254a9a56974cdc8e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"legoStore",
+						"5f1c052254a9a56974cdc8e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5f1bbe19619e1420be65d676\",\n    \"noOfParts\": 512,\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    },\n    \"paymentOptions\": {\n        \"id\": \"5f1bbdb0619e1420be65d66e\",\n        \"type\": \"CreditCard\",\n        \"fee\": 12\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/legoStore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"legoStore"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"5f1bbe19619e1420be65d676\",\n    \"noOfParts\": 512,\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    },\n    \"paymentOptions\": {\n        \"id\": \"5f1bbdb0619e1420be65d66e\",\n        \"type\": \"CreditCard\",\n        \"fee\": 12\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jul 2020 09:41:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"noOfParts\": 512,\n    \"id\": \"5f1bbe19619e1420be65d676\",\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500,\n        \"inStock\": true\n    },\n    \"paymentOptions\": {\n        \"id\": \"5f1bbdb0619e1420be65d66e\",\n        \"type\": \"CreditCard\",\n        \"fee\": 12\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5f1bbe19619e1420be65d676\",\n    \"noOfParts\": 512,\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    },\n    \"paymentOptions\": {\n        \"id\": \"5f1bbdb0619e1420be65d66e\",\n        \"type\": \"CreditCard\",\n        \"fee\": 12\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/legoStore/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"legoStore",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5f1bbe19619e1420be65d676"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"5f1bbe19619e1420be65d676\",\n    \"noOfParts\": 512,\n    \"name\": \"death star\",\n    \"difficulty\": \"HARD\",\n    \"theme\": \"star wars\",\n    \"reviews\": [\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        },\n        {\n            \"userName\": \"sktest1\",\n            \"rating\": 4\n        }\n    ],\n    \"deliveryInfo\": {\n        \"deliveryDate\": \"2020-07-25\",\n        \"deliveryFee\": 500.0,\n        \"inStock\": true\n    },\n    \"paymentOptions\": {\n        \"id\": \"5f1bbdb0619e1420be65d66e\",\n        \"type\": \"CreditCard\",\n        \"fee\": 12\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/legoStore/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"legoStore",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5f1bbe19619e1420be65d676"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jul 2020 09:41:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

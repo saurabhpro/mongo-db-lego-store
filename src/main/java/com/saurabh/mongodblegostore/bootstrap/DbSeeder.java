@@ -34,6 +34,7 @@ public class DbSeeder implements CommandLineRunner {
 
         /*
         Payment Options
+        If we used @DBRef then cascading is not done, so we will need to put them manually in db
          */
 
         PaymentOptions creditCardPayment = new PaymentOptions(PaymentType.CreditCard, 0);

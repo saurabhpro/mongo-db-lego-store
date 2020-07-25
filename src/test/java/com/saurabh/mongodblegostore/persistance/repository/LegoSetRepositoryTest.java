@@ -72,9 +72,9 @@ class LegoSetRepositoryTest {
     /**
      * Write a new integration test that check the findAllInStock() method in the LegoSetRepository is working as expected.
      * The method uses @Query to define its behavior, so it is a good idea to test it.
-     *
+     * <p>
      * Input : Add 2 products in the database, one in stock, the other out of stock
-     *
+     * <p>
      * Output : 1 product
      */
     @Test

@@ -35,6 +35,7 @@ public interface LegoSetRepository extends MongoRepository<LegoSet, String>, Que
     @Query("{'paymentOptions.id' : ?0}")
     Collection<LegoSet> findByPaymentOptionId(String id);
 
+    // assignments
     List<LegoSet> findAllByThemeNotLike(String excludingTheme);
 
     @Query("{ 'delivery.inStock' : { $eq : true } }")

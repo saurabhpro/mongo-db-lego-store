@@ -9,6 +9,8 @@ ${AnsiColor.BRIGHT_RED}                          |____| \___| \__, | \___/   |__
 ${AnsiColor.BRIGHT_RED}                                       |___/
 ```
 
+https://github.com/dangeabunea/UdemyAcceleratedSpringBootMongoDb
+
 ### link to Atlas Mongo
 https://www.opencodez.com/java/use-mongodb-atlas-with-spring-boot.htm
 > If your password is @bc123, you must escape the @ character when specifying the password in the connection string; e.g. %40bc123.
