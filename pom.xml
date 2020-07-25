@@ -78,6 +78,22 @@
         </dependency>
 
 
+        <!-- Mongo Migrations (doesn't support Atlas)-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.mongobee</groupId>-->
+<!--            <artifactId>mongobee</artifactId>-->
+<!--            <version>0.13</version>-->
+<!--        </dependency>-->
+
+        <!-- To use with Spring and Mongo Atlas (https://github.com/cloudyrock/mongock)-->
+        <dependency>
+            <groupId>com.github.cloudyrock.mongock</groupId>
+            <artifactId>mongock-spring</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

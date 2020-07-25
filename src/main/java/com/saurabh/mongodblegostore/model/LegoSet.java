@@ -17,7 +17,7 @@ import java.util.Collection;
 @Document(collection = "LegoSet")
 public class LegoSet {
 
-    @Transient
+    //@Transient to test data migration
     int noOfParts;
 
     @Id
