@@ -6,13 +6,14 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.List;
 
 @Repository
-public interface LegoSetRepository extends MongoRepository<LegoSet, String> {
+public interface LegoSetRepository extends MongoRepository<LegoSet, String>, QuerydslPredicateExecutor<LegoSet> {
     /**
      * @param theme
      * @param sort  only works for declarative named queries , in imperative @Query ones, we need to add query itself to sort

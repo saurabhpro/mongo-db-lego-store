@@ -1,6 +1,9 @@
 package com.saurabh.mongodblegostore.controller;
 
+import com.querydsl.core.types.Predicate;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.saurabh.mongodblegostore.model.LegoSet;
+import com.saurabh.mongodblegostore.model.QLegoSet;
 import com.saurabh.mongodblegostore.model.constants.LegoSetDifficulty;
 import com.saurabh.mongodblegostore.persistance.repository.LegoSetRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 import java.util.List;
-
 
 @Slf4j
 @RestController
@@ -42,26 +44,34 @@ public class CustomFilteringController {
     @GetMapping("/deliveryFee/{fee}")
     public ResponseEntity<Collection<LegoSet>> getByDeliveryFee(@PathVariable int fee) {
         final Collection<LegoSet> legoSetList = this.legoSetRepository.findAllByDeliveryPriceLessThan(fee);
-        return legoSetList.isEmpty() ? ResponseEntity.notFound().build() : ResponseEntity.ok(legoSetList);
+        return legoSetList.isEmpty() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(legoSetList);
     }
 
     @GetMapping("/greatReviews")
     public ResponseEntity<Collection<LegoSet>> byGreatReviews() {
         final Collection<LegoSet> legoSetList = this.legoSetRepository.findAllByGreatReviews();
-        return legoSetList.isEmpty() ? ResponseEntity.notFound().build() : ResponseEntity.ok(legoSetList);
+        return legoSetList.isEmpty() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(legoSetList);
     }
 
     @GetMapping("/paymentOption/{id}")
     public ResponseEntity<Collection<LegoSet>> byPaymentOption(@PathVariable String id) {
         final Collection<LegoSet> legoSetList = this.legoSetRepository.findByPaymentOptionId(id);
-        return legoSetList.isEmpty() ? ResponseEntity.notFound().build() : ResponseEntity.ok(legoSetList);
+        return legoSetList.isEmpty() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(legoSetList);
 
     }
 
     @GetMapping("/themeNotLikeStarWars")
     public ResponseEntity<Collection<LegoSet>> themeNotLikeStarWars() {
         final Collection<LegoSet> legoSetList = this.legoSetRepository.findAllByThemeNotLike("Star Wars");
-        return legoSetList.isEmpty() ? ResponseEntity.notFound().build() : ResponseEntity.ok(legoSetList);
+        return legoSetList.isEmpty() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(legoSetList);
     }
 
     @GetMapping("/inStock")
@@ -70,6 +80,26 @@ public class CustomFilteringController {
         final List<LegoSet> legoSetList = this.legoSetRepository.findAllByDeliveryInStock(sort);
         return getListResponseEntity(legoSetList);
 
+    }
+
+    @GetMapping("bestBuys")
+    public ResponseEntity<Iterable<LegoSet>> bestBuys() {
+        // build query
+        QLegoSet query = new QLegoSet("query");
+        BooleanExpression inStockFilter = query.deliveryInfo.inStock.isTrue();
+        Predicate smallDeliveryFeeFilter = query.deliveryInfo.deliveryFee.lt(50);
+        Predicate hasGreatReviews = query.reviews.any().rating.eq(10);
+
+        Predicate bestBuysFilter = inStockFilter
+                .and(smallDeliveryFeeFilter)
+                .and(hasGreatReviews);
+
+        // pass the query to findAll()
+        final Iterable<LegoSet> legoSets = this.legoSetRepository.findAll(bestBuysFilter);
+
+        return legoSets.iterator().hasNext() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(legoSets);
     }
 
     private ResponseEntity<List<LegoSet>> getListResponseEntity(List<LegoSet> legoSetList) {
