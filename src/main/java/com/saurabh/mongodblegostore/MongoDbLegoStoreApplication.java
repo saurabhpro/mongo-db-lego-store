@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MongoDbLegoStoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MongoDbLegoStoreApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MongoDbLegoStoreApplication.class, args);
+    }
 
 }
