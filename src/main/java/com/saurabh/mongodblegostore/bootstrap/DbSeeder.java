@@ -30,18 +30,18 @@ public class DbSeeder implements CommandLineRunner {
         this.legoSetRepository.deleteAll();
 
         //drop our collection and start fresh
-        this.mongoTemplate.dropCollection(PaymentOptions.class);
+       // this.mongoTemplate.dropCollection(PaymentOptions.class);
 
         /*
         Payment Options
          */
 
         PaymentOptions creditCardPayment = new PaymentOptions(PaymentType.CreditCard, 0);
-        this.mongoTemplate.insert(creditCardPayment);
+        //this.mongoTemplate.insert(creditCardPayment);
         PaymentOptions payPalPayment = new PaymentOptions(PaymentType.PayPal, 1);
-        this.mongoTemplate.insert(payPalPayment);
+        //this.mongoTemplate.insert(payPalPayment);
         PaymentOptions cashPayment = new PaymentOptions(PaymentType.Cash, 10);
-        this.mongoTemplate.insert(cashPayment);
+        //this.mongoTemplate.insert(cashPayment);
 
         /*
         Lego Sets
@@ -91,7 +91,7 @@ public class DbSeeder implements CommandLineRunner {
                 new DeliveryInfo(LocalDate.now().plusDays(10), 100, false),
                 cashPayment);
 
-        /**
+        /*
          * Array.asList creates mutable list collection,
          * List.of creates immutable (preferred)
          */

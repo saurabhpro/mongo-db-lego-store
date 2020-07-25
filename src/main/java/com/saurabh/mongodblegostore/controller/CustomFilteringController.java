@@ -8,6 +8,7 @@ import com.saurabh.mongodblegostore.model.constants.LegoSetDifficulty;
 import com.saurabh.mongodblegostore.persistance.repository.LegoSetRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -100,6 +101,12 @@ public class CustomFilteringController {
         return legoSets.iterator().hasNext() ?
                 ResponseEntity.notFound().build() :
                 ResponseEntity.ok(legoSets);
+    }
+
+    @GetMapping("/fullTextSearch/{text}")
+    public Collection<LegoSet> fullTextSearch(@PathVariable String text){
+        TextCriteria textCriteria = TextCriteria.forDefaultLanguage().matching(text);
+        return this.legoSetRepository.findAllBy(textCriteria);
     }
 
     private ResponseEntity<List<LegoSet>> getListResponseEntity(List<LegoSet> legoSetList) {
