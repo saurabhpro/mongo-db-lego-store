@@ -79,11 +79,11 @@
 
 
         <!-- Mongo Migrations (doesn't support Atlas)-->
-<!--        <dependency>-->
-<!--            <groupId>com.github.mongobee</groupId>-->
-<!--            <artifactId>mongobee</artifactId>-->
-<!--            <version>0.13</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.github.mongobee</groupId>-->
+        <!--            <artifactId>mongobee</artifactId>-->
+        <!--            <version>0.13</version>-->
+        <!--        </dependency>-->
 
         <!-- To use with Spring and Mongo Atlas (https://github.com/cloudyrock/mongock)-->
         <dependency>
@@ -92,6 +92,13 @@
             <version>3.3.2</version>
         </dependency>
 
+
+        <!-- Embedded MongoDB for In memory mongo server for Testing -->
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <scope>test</scope>
+        </dependency>
 
 
     </dependencies>
